@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @AnujWadi-Git
+- 👋 Hi, I’m Anuj Wadi (@AnujWadi-Git) 
 - 👀 I’m interested in Coding
 - 🌱 I’m currently learning A.I. Engineering 
 - 📫 How to reach me -> www.linkedin.com/in/anujwadi
