@@ -1,6 +1,6 @@
 - 👋 Hi, I’m Anuj Wadi (@AnujWadi-Git) 
 - 👀 I’m interested in Coding
-- 🌱 I’m currently learning A.I. Engineering 
+- 🌱 I’m currently pursuing Master's in Robotics and Autnomous Systems (Artificial Intelligence)
 - 📫 How to reach me -> www.linkedin.com/in/anujwadi
 
 <!---
