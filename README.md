@@ -98,20 +98,6 @@ Published reinforcement learning research processing 50K+ market events/day.
 
 ---
 
-# 📊 GitHub Stats
-
-Replace `YOUR_USERNAME` below with your GitHub username.
-
-```md
-https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=true&theme=tokyonight
-
-https://github-readme-streak-stats.herokuapp.com/?user=YOUR_USERNAME&theme=tokyonight
-
-https://github-readme-activity-graph.vercel.app/graph?username=YOUR_USERNAME&theme=tokyo-night
-```
-
----
-
 # 🎯 Currently Exploring
 
 - AI Agents
@@ -126,8 +112,8 @@ https://github-readme-activity-graph.vercel.app/graph?username=YOUR_USERNAME&the
 
 # 📫 Connect
 
-- 🌐 Portfolio
-- 💼 LinkedIn
+- 🌐 [Portfolio](https://www.anujwadi.com/)
+- 💼 [LinkedIn](https://www.linkedin.com/in/anujwadi/)
 - 📧 anujwadi@gmail.com
 
 ---
