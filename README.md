@@ -34,7 +34,7 @@ My work bridges cutting-edge AI research with scalable real-world deployment acr
 # 💼 Experience
 
 ### AI Full Stack Engineer — PrimaThink Technologies
-- Built an AI-assisted Blood Bank Management System deployed across hospitals
+- Built an AI-assisted Blood Bank Management System deployed across the hospitals
 - Integrated RFID, MongoDB, REST APIs, and CI/CD
 - Reduced blood request processing time by ~50%
 
