@@ -1,0 +1,177 @@
+# =============================================================================
+# Job Search Agent — Candidate & Search Configuration
+# Edit this file to change search behavior. No Python code changes needed.
+# =============================================================================
+
+candidate:
+  name: "Anuj Wadi"
+  education:
+    - "M.S., Robotics and Autonomous Systems (AI) — Arizona State University"
+    - "B.Tech, Artificial Intelligence"
+  experience_level: "new_graduate"   # new_graduate | early_career (0-2 years)
+  work_authorization: "F-1 STEM OPT, authorized to work in the US, no sponsorship required to start"
+  skills:
+    - Python
+    - Java
+    - C++
+    - JavaScript
+    - TypeScript
+    - SQL
+    - Data Structures and Algorithms
+    - Object-Oriented Programming
+    - REST APIs
+    - Spring Boot
+    - Kafka
+    - MongoDB
+    - AWS
+    - GCP
+    - Docker
+    - Kubernetes
+    - Terraform
+    - PyTorch
+    - JAX
+    - Transformers
+    - LoRA
+    - PEFT
+    - scikit-learn
+    - LLM APIs
+    - LangChain
+    - LangGraph
+    - MCP
+    - Prompt Engineering
+    - Agentic AI
+    - ROS
+    - Robotics Software
+    - Motion Planning
+    - Pandas
+    - Machine Learning
+    - Random Forest
+    - Gradient Boosting
+
+locations:
+  primary:
+    - "Phoenix, AZ"
+    - "Tempe, AZ"
+  remote:
+    - "Remote - United States"
+  relocation_friendly: true   # if true, do not silently drop non-primary US cities
+  hybrid_allowed: true
+
+roles:
+  target:
+    - "Software Engineer"
+    - "Software Development Engineer"
+    - "SDE"
+    - "AI Engineer"
+    - "AI/ML Engineer"
+    - "Machine Learning Engineer"
+    - "ML Engineer"
+    - "Applied AI Engineer"
+    - "Generative AI Engineer"
+    - "LLM Engineer"
+    - "Agentic AI Engineer"
+    - "Forward Deployed Engineer"
+    - "Robotics Software Engineer"
+    - "Robotics Engineer"
+    - "AI Software Engineer"
+    - "Backend Software Engineer"
+    - "Full Stack Engineer"       # only kept if strongly AI-focused, see filters.py
+  excluded_title_keywords:
+    - senior
+    - sr.
+    - staff
+    - principal
+    - lead
+    - manager
+    - director
+    - architect
+  excluded_categories:
+    - "IT support"
+    - "help desk"
+    - "technical support"
+    - "embedded"
+    - "firmware"
+    - "hardware engineer"
+    - "electrical engineer"
+    - "electronics engineer"
+    - "QA engineer"
+    - "quality assurance"
+    - "test engineer"
+    - "data analyst"
+    - "BI analyst"
+    - "business intelligence analyst"
+    - "data engineer"          # only excluded when NOT AI/ML flavored (see filters.py)
+    - "devops"                 # only excluded when NOT AI/ML flavored
+    - "site reliability"
+    - "sre"
+    - "cybersecurity"
+    - "security engineer"
+    - "sales engineer"
+    - "consultant"
+    - "internship"
+    - "intern"
+
+employment:
+  preferred:
+    - "fulltime"
+    - "contract"
+    - "contract-to-hire"
+  deprioritized:
+    - "internship"
+
+salary:
+  target_min_usd: 100000
+  reject_below_target: false   # never auto-reject solely for low/missing salary
+
+filters:
+  max_experience_years: 2
+  new_grad_override_phrases:
+    - "new grad"
+    - "new graduate"
+    - "recent graduate"
+    - "entry level"
+    - "entry-level"
+    - "0-1 year"
+    - "0-2 years"
+    - "equivalent experience"
+    - "no prior experience"
+  exclude_clearance: true
+  exclude_itar: true
+  exclude_mandatory_citizenship: true
+  # Do NOT reject jobs that merely say "must be authorized to work in the US"
+  clearance_keywords:
+    - "security clearance"
+    - "active clearance"
+    - "secret clearance"
+    - "top secret"
+    - "itar"
+    - "must be a us citizen"
+    - "u.s. citizenship required"
+    - "us citizenship required"
+    - "citizenship required"
+
+sources:
+  indeed: true
+  linkedin: false
+  greenhouse: false
+  lever: false
+  yc: false
+  company_pages: false
+
+search:
+  # Query x location combinations the /indeed-search skill should run by default.
+  default_queries:
+    - "Software Engineer"
+    - "AI Engineer"
+    - "Machine Learning Engineer"
+    - "Robotics Software Engineer"
+    - "LLM Engineer"
+    - "Agentic AI Engineer"
+  default_locations:
+    - "Phoenix, AZ"
+    - "Tempe, AZ"
+    - "Remote"
+  country_code: "US"
+  max_results_per_query: 25
+  recency_days: 30
+  recency_buckets: [1, 3, 7, 14, 30]

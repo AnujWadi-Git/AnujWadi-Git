@@ -1,0 +1,44 @@
+[
+  {
+    "title": "AI Engineer, New Grad",
+    "company": "Nimbus Robotics",
+    "location": "Tempe, AZ",
+    "description": "We welcome new grads. Python, PyTorch, LangChain, and AWS experience preferred. Compensation $105,000 - $125,000 per year.",
+    "posted_date": "unknown",
+    "employment_type": "fulltime",
+    "source": "indeed",
+    "source_url": "https://www.indeed.com/viewjob?jk=demo0001",
+    "apply_url": "https://www.indeed.com/viewjob?jk=demo0001&tk=sample",
+    "job_id": "demo0001"
+  },
+  {
+    "title": "Senior Machine Learning Engineer",
+    "company": "BigTech Inc",
+    "location": "Remote - United States",
+    "description": "Requires 6+ years of experience leading ML platform teams.",
+    "posted_date": "unknown",
+    "employment_type": "fulltime",
+    "source": "indeed",
+    "apply_url": "https://www.indeed.com/viewjob?jk=demo0002"
+  },
+  {
+    "title": "Help Desk Technician",
+    "company": "Generic Corp",
+    "location": "Phoenix, AZ",
+    "description": "Provide IT support and help desk services to internal staff.",
+    "posted_date": "unknown",
+    "employment_type": "fulltime",
+    "source": "indeed",
+    "apply_url": "https://www.indeed.com/viewjob?jk=demo0003"
+  },
+  {
+    "title": "Software Engineer",
+    "company": "Cascade Systems",
+    "location": "Austin, TX",
+    "description": "Backend software engineer role, Python and REST APIs, no experience floor listed. Sponsorship not available for this role.",
+    "posted_date": "unknown",
+    "employment_type": "fulltime",
+    "source": "indeed",
+    "apply_url": "https://www.indeed.com/viewjob?jk=demo0004"
+  }
+]
