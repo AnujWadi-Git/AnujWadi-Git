@@ -1,0 +1,11 @@
+# job-search-agent has its own .gitignore for its data/reports directories;
+# this root file covers repo-wide cruft.
+
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+.DS_Store
+*.swp
+.env

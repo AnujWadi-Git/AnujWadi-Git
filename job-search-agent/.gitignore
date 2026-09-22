@@ -1,0 +1,30 @@
+# Local database — personal job search history, not repo content
+data/*.db
+data/*.db-journal
+data/*.db-wal
+data/*.db-shm
+!data/.gitkeep
+
+# Generated reports (opt-in to commit if you want history tracked)
+reports/*.md
+!reports/.gitkeep
+
+# Secrets
+.env
+*.pem
+*.key
+cookies.txt
+*.session
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+*.egg-info/
+.venv/
+venv/
+
+# OS/editor cruft
+.DS_Store
+*.swp
