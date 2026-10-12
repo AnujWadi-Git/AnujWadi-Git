@@ -25,6 +25,11 @@ Answer three questions and get one movie. A TF-IDF recommender over about 5,200 
 - **Engineering detail:** filters relax instead of returning zero results, and the API has per-IP rate limiting.
 - Next.js, FastAPI, scikit-learn
 
+### [Maze Navigation with MyCobot Pro 600](https://github.com/AnujWadi-Git/Maze-Navigation-with-MyCobot-Pro-600): robot arm maze solver
+Co-built with two teammates (graduate coursework): a camera-guided pipeline that finds a maze's entrance, path and exit, then drives a 6-axis arm through it. Reached 92% success over 50+ trials.
+- **Engineering detail:** OpenCV detection and ArUco-marker calibration feed a planned path, which inverse kinematics (MATLAB) turns into joint commands sent to the robot over TCP.
+- Python, OpenCV, MATLAB, ROS
+
 ## Skills
 
 **Languages:** Python, TypeScript, JavaScript, Swift, Java, C++, SQL  
