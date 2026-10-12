@@ -1,70 +1,38 @@
-<div align="center">
-
 # Anuj Wadi
-### Software Engineer · AI/ML Engineer
 
-Building real-time AI systems — speech, agents, and autonomy — on production backends.
+Software engineer who builds AI-backed products end to end: APIs, integrations, deployment, and the user workflow around them. M.S. in Robotics & Autonomous Systems (AI), Arizona State University.
 
-[Portfolio](https://www.anujwadi.com/) · [LinkedIn](https://www.linkedin.com/in/anujwadi/) · anujwadi@gmail.com
+Previously built the APIs and staff interface for a blood-bank management system live in 3 hospitals, and trained the staff who used it.
 
-**United States · Open to relocation · F-1 STEM OPT — authorized 3 years, no sponsorship required to start**
+[Portfolio](https://www.anujwadi.com) · [LinkedIn](https://linkedin.com/in/anujwadi) · [awadi@asu.edu](mailto:awadi@asu.edu)
 
-</div>
+## Featured projects
 
----
+### [Clippy](https://github.com/AnujWadi-Git/Clippy): macOS clipboard manager
+A native menu-bar app for finding things you copied earlier without keeping secrets around. I built the clipboard monitor, a retention worker (24 hours by default), SHA-256 deduplication and natural-language search.
+- **Engineering detail:** passwords, tokens, keys and OTPs are filtered *before* anything is saved. Search combines intent parsing, keywords and on-device embeddings. On a 40-query set, top-1 accuracy rose from 70% to roughly 75–82%; [the evaluation](https://github.com/AnujWadi-Git/Clippy/blob/main/docs/SEARCH-EVAL.md) notes the run-to-run noise.
+- **Verification:** 302 core checks and 35 headless end-to-end tests. Cloud AI is off by default.
+- Swift, SwiftUI, on-device LLM and embeddings, OCR · [Demo and download](https://www.anujwadi.com/clippy/)
 
-## About
+### [Yapper AI](https://github.com/AnujWadi-Git/yapper-ai-public): multi-user AI chat with RAG
+A deployed FastAPI service combining tool calling with retrieval over user-uploaded documents. I built auth, conversation persistence, per-user rate limits and the browser client.
+- **Engineering detail:** local ONNX embeddings (`fastembed`) replaced PyTorch to fit a 512 MB host. Daily limits are DB-backed, with a separate message when the shared model quota runs out; I reproduced that case on purpose to verify it.
+- **Status:** the retrieval store is in-memory today. A pgvector swap is planned, not done. This public build uses browser speech only.
+- Python, FastAPI, Postgres (Supabase), Alembic, JWT cookie auth, Render · [Live](https://yapper-ai-public.onrender.com) (free tier, may cold-start)
 
-M.S. Robotics & Autonomous Systems (AI) at **Arizona State University**. I build systems that ship — real-time voice agents, applied ML in production products, and autonomous robotics.
+### [Job Search Agent](https://github.com/AnujWadi-Git/AnujWadi-Git/tree/main/job-search-agent): MCP-driven job pipeline
+Claude fetches postings through the Indeed MCP connector. Deterministic, unit-tested Python then handles deduplication, filtering, classification and SQLite storage.
+- **Engineering detail:** judgment calls such as "is this a duplicate?" live in testable code, not in prompts.
+- Python, SQLite, MCP, Claude Code skills
 
----
-
-## Featured Projects
-
-### 🎙️ [Yapper AI — Multimodal AI Agent Runtime](https://github.com/AnujWadi-Git/Yapper-AI)
-An agentic runtime that grounds Claude's responses in real-time RAG retrieval across 5 live knowledge sources, unifying reasoning, retrieval, voice, and avatar generation into one non-blocking FastAPI pipeline — so users get instant text replies while voice and video render in the background. Fed by feedback from a 30+ peer demo, a background job queue cut end-to-end wait time from **20s to 7s** via simultaneous text, voice, and video streaming.
-
-`Python` `FastAPI` `Claude` `RAG` `Tool-Use / Function-Calling` `ElevenLabs` `SadTalker` `async httpx`
-
-### 🦾 [Maze Navigation with MyCobot Pro 600](https://github.com/AnujWadi-Git/Maze-Navigation-with-MyCobot-Pro-600)
-Autonomous maze-solving for a 6-DOF robotic arm: OpenCV vision → path planning → inverse-kinematics execution. **92% task success across 50+ trials**, collisions cut from ~18% to ~4%. Built a Gazebo sim environment that removed the hardware dependency, cutting iteration cycles from ~3 hours to ~45 minutes.
-
-`ROS` `Gazebo` `OpenCV` `Python` `Inverse Kinematics`
-
-### 🧠 Harmony — Multimodal Mental Health Monitoring
-Led a team of 5 building a prototype that fuses physiological signals and text via LSTM and BERT pipelines to flag distress indicators across 3 data modalities. Encrypted storage and role-based access controls; presented to a faculty panel of 7.
-
-**[Demo video →](https://www.anujwadi.com/)**
-
-`Python` `TensorFlow` `LSTM` `BERT`
-
----
-
-## Experience
-
-**AI Full Stack Engineer** — PrimaThink Technologies *(Jan 2024 – Jun 2024)*
-Delivered an AI-assisted Blood Bank Management System to 3 hospitals with a 5-person engineering team, interviewing 12+ coordinators and training 20+ hospital staff to replace manual inventory tracking. Forecast blood supply shortages 7 days ahead using Random Forest and Gradient Boosting models trained on 10K+ donation records. Cut bug turnaround from 2 days to 4 hours by implementing CI/CD pipelines with 85%+ Jest test coverage.
-
-**Web Development Intern** — PrimaThink Technologies *(Jul 2023 – Dec 2023)*
-Grew an early-stage startup's first website to 12K+ users, owning design through deployment as the company's public launch channel. Launched the 25-page responsive site on a JavaScript, React, and PHP stack, partnering with 3 founders and a designer. Earned a promotion to AI Full Stack Engineer after the launch.
-
-**Machine Learning Intern** — Tech Learn Live *(Jul 2021 – Dec 2021)*
-Improved model accuracy on 6 ML experiments, including a linear regression model for stock price movement prediction and a symptom-based heart attack risk detector. Trained and assessed models in Python, Scikit-learn, and TensorFlow with a team of 3, applying classification, regression, and neural network approaches. Standardized data prep for a 4-intern cohort with reusable pipelines for feature engineering, normalization, and cross-validation.
-
----
+### [FlipFlick](https://github.com/AnujWadi-Git/FlipFlick): movie picker
+Answer three questions and get one movie. A TF-IDF recommender over about 5,200 TMDB titles builds a ranked pool, then a softmax-weighted draw picks one and explains why.
+- **Engineering detail:** filters relax instead of returning zero results, and the API has per-IP rate limiting.
+- Next.js, FastAPI, scikit-learn
 
 ## Skills
 
-**Languages** — Python · TypeScript · JavaScript · Java · C++ · SQL
-**Core CS** — Data Structures & Algorithms · OOP · ROS · Motion Planning
-**Agentic AI** — MCP · LLM APIs · Agentic Workflows · RAG · Prompt Engineering
-**Machine Learning** — Scikit-learn · Random Forest · Gradient Boosting · Regression Models · PyTorch · TensorFlow · LSTM/BERT
-**Backend & Cloud** — FastAPI · REST APIs · WebSockets · Pandas · AWS · GCP · Docker · Kubernetes · Terraform
-**Robotics** — Gazebo · Inverse Kinematics · Sensor Fusion · OpenCV
-
----
-
-## Education
-
-**M.S., Robotics & Autonomous Systems (AI)** — Arizona State University · *2026*
-**B.Tech, Artificial Intelligence** — G.H. Raisoni Institute of Engineering & Technology · *2024*
+**Languages:** Python, TypeScript, JavaScript, Swift, Java, C++, SQL  
+**Backend and cloud:** FastAPI, REST APIs, React, AWS, GCP, Docker, Kubernetes, Terraform  
+**AI and ML:** LLM APIs, MCP, RAG, tool use, scikit-learn, PyTorch, TensorFlow  
+**Robotics:** ROS, OpenCV, motion planning
