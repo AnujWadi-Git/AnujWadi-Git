@@ -20,11 +20,6 @@ A deployed FastAPI service combining tool calling with retrieval over user-uploa
 - **Status:** the retrieval store is in-memory today. A pgvector swap is planned, not done. This public build uses browser speech only.
 - Python, FastAPI, Postgres (Supabase), Alembic, JWT cookie auth, Render · [Live](https://yapper-ai-public.onrender.com) (free tier, may cold-start)
 
-### [Job Search Agent](https://github.com/AnujWadi-Git/AnujWadi-Git/tree/main/job-search-agent): MCP-driven job pipeline
-Claude fetches postings through the Indeed MCP connector. Deterministic, unit-tested Python then handles deduplication, filtering, classification and SQLite storage.
-- **Engineering detail:** judgment calls such as "is this a duplicate?" live in testable code, not in prompts.
-- Python, SQLite, MCP, Claude Code skills
-
 ### [FlipFlick](https://github.com/AnujWadi-Git/FlipFlick): movie picker
 Answer three questions and get one movie. A TF-IDF recommender over about 5,200 TMDB titles builds a ranked pool, then a softmax-weighted draw picks one and explains why.
 - **Engineering detail:** filters relax instead of returning zero results, and the API has per-IP rate limiting.
