@@ -1,6 +1,6 @@
 # Anuj Wadi
 
-Software engineer who builds AI-backed products end to end: APIs, integrations, deployment, and the user workflow around them. M.S. in Robotics & Autonomous Systems (AI), Arizona State University.
+Software engineer and Forward Deployed Engineer who builds AI-backed products end to end: APIs, integrations, deployment, and the user workflow around them. M.S. in Robotics & Autonomous Systems (AI), Arizona State University.
 
 Previously built the APIs and staff interface for a blood-bank management system live in 3 hospitals, and trained the staff who used it.
 
