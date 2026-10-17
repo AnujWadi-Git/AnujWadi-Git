@@ -2,7 +2,9 @@
 
 Software engineer and Forward Deployed Engineer who builds AI-backed products end to end: APIs, integrations, deployment, and the user workflow around them. M.S. in Robotics & Autonomous Systems (AI), Arizona State University.
 
-Previously built the APIs and staff interface for a blood-bank management system live in 3 hospitals, and trained the staff who used it.
+## Forward deployment
+
+At PrimaThink I built the APIs and a simplified staff interface for a blood-bank management system that went live across 3 hospitals, replacing paper and Excel workflows. I also trained 20+ staff over 6 weeks, installed scanner drivers, supported Windows, Linux and Android machines on site, and forecast blood shortages 7 days ahead from 10K+ donation records.
 
 [Portfolio](https://www.anujwadi.com) · [LinkedIn](https://linkedin.com/in/anujwadi) · [awadi@asu.edu](mailto:awadi@asu.edu)
 
